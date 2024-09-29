@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PdfMaker</title>
+    <link rel="stylesheet" href="build/css/style.css">
+    <script src="build/js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="build/img/icon.ico">
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white overflow-x-hidden">  
+    <header class="sticky top-0 z-10 text-red-700 bg-blue-700">
+    <!-- <header class="sticky top-0 z-10 text-white bg-teal-700"> -->
+
+        <section class="flex items-center justify-between max-w-4xl p-4 mx-auto">
+            <h1 class="text-3xl font-medium"> <a href="#hero"> <img src="build/img/logoapp5.png" width="20" height="20" alt="logo"> </a></h1>
+
+            <div>
+                <button id="hamburger-button" class="relative w-8 h-8 text-3xl cursor-pointer md:hidden">
+                    &#9776;
+                    <!-- <div class="absolute w-8 h-1 bg-black rounded top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-black before:w-8 before:h-1 before:rounded
+                    before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500
+                    after:content-[''] after:bg-black after:w-8 after:h-1 after:rounded
+                    after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
+                        
+                    </div> -->
+                    <div class="absolute w-8 h-1 bg-white rounded top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded
+                    before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500
+                    after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded
+                    after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
+                        
+                    </div>
+                </button>
+
+                <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+                    <a href="index.html" class="hover:opacity-90"> Home </a>    
+                    <a href="build/privacy_policy.html" class="hover:opacity-90">Privacy Policy</a>    
+                    <a href="#contact" class="hover:opacity-90">Contact US</a>    
+                    
+                </nav>
+
+            </div>
+
+        </section>
+        
+        <!-- <section id="mobile-menu" class="absolute flex-col hidden w-full text-5xl origin-top bg-blue-700 top-68 justify-items-center animate-open-menu"> -->
+        <section id="mobile-menu" class="absolute flex-col hidden w-full text-5xl origin-top bg-blue-700 top-68 justify-items-center animate-open-menu">
+            <!-- <button class="self-end px-6 text-8xl">
+                &times;
+            </button> -->
+            <nav class="flex flex-col items-center min-h-screen py-8" aria-label="mobile">
+                <a href="#hero" class="w-full py-6 text-center hover:opacity-90">Home</a>
+                <a href="build/privacy_policy.html" class="w-full py-6 text-center hover:opacity-90">Privacy Policy </a>
+                <!-- <a href="#testimonials" class="w-full py-6 text-center hover:opacity-90">Testimonial</a> -->
+                <a href="#contact" class="w-full py-6 text-center hover:opacity-90">Contact Us</a>
+                <!-- <a href="#footer" class="w-full py-6 text-center hover:opacity-90">Legal</a> -->
+            </nav>
+        </section>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+
+        <section id="hero" class="flex flex-col-reverse items-center justify-center gap-8 p-6 mb-12 sm:flex-row scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+            <article class="sm:w-1/2">
+                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+                    Welcome on <span class="text-indigo-700 dark:text-indigo-300"> PdfMaker </span>  universe...
+                </h2>
+                <p class="max-w-md mt-4 text-2xl text-center sm:text-left text-slate-700 dark:text-slate-400">
+                    PdfMaker is an essential application for individuals, families, entrepreneurs, merchants, engineers, 
+                    armed forces, diplomats, secretaries, managers, supervisors, photographers, architects, students, 
+                    pupils, learners, as well as for all services within a company, public agencies, state institutions, 
+                    organizations of all kinds, and many more. Whether you are an individual or a business, PdfMaker 
+                    allows you to collect and organize your documents for sharing on your social networks, storing on 
+                    either remote or local storage spaces, or printing in cybercafés, offices, and business service centers. 
+                    PdfMaker is the ideal solution for you.    
+                </p>
+                <!-- <p class="max-w-md mt-4 text-2xl text-center sm:text-left text-slate-700 dark:text-slate-400">
+                    Think Acme Rockets.
+                    
+                </p> -->
+            </article>
+
+            <img src="build/img/logoapp5.png" class="w-1/2" alt="logoapp5" srcset="">
+
+        </section>
+
+        <hr class="w-1/2 mx-auto bg-black dark:bg-white">
+
+
+        <section id="rockets" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+
+            <h2 class="mb-12 text-4xl font-bold text-center sm:text-5xl text-slate-900 dark:text-white">
+                 Images
+            </h2>
+            <ul class="flex flex-col items-center gap-8 mx-12 list-none sm:flex-row">
+               
+                <li class="flex flex-col items-center w-100 px-2 py-6 bg-white border border-solid shadow-xl sm:w-5/6 border-slate-900 dark:border-gray-100 dark:bg-black rounded-3xl">
+                    <img src="build/img/IMG_home.png" alt="Explorer" srcset="" class="w-100 mb-6">
+                    <h3 class="text-2xl text-center text-slate-900 dark:text-white">
+                        Choose Files 
+                    </h3>
+                    <p class=" hidden mt-2 text-3xl text-center sm:block text-slate-500 dark:text-slate-400">
+                        
+                    </p>
+                    <p class="mt-2 text-2xl text-center sm:hidden text-slate-500 dark:text-slate-400">
+                       
+                    </p>
+                </li>
+                <li class="flex flex-col items-centerw-100 px-2 py-6 bg-white border border-solid shadow-xl sm:w-5/6 border-slate-900 dark:border-gray-100 dark:bg-black rounded-3xl">
+                    <img src="build/img/IMG_all_file.png" alt="Explorer" srcset="" class="w-100 mb-6">
+                    <h3 class="text-2xl text-center  text-slate-900 dark:text-white sm:text-sm">
+                        All Files
+                    </h3>
+                    <p class="hidden mt-2 text-3xl text-center sm:block text-slate-500 dark:text-slate-400">
+                        
+                    </p>
+                    <p class="mt-2 text-2xl text-center sm:hidden text-slate-500 dark:text-slate-400">
+                     
+                    </p>
+                </li>
+
+              
+                <li class="flex flex-col items-center  w-100 px-2 py-6 bg-white border border-solid 
+                shadow-xl sm:w-5/6 border-slate-900 dark:border-gray-100
+                 dark:bg-black rounded-3xl hover:border-red-400 outline-dashed ">
+                    <img src="build/img/IMG_manage_file.png" alt="Infinity" srcset="" class="w-100 mb-6">
+                    <h3 class="text-2xl text-center text-slate-900 dark:text-white sm:text-sm">
+                        Manage  Files
+                    </h3>
+                    <p class="hidden mt-2 text-3xl text-center sm:block text-slate-500 dark:text-slate-400">
+                      
+                    </p>
+                    <p class="mt-2 text-2xl text-center sm:hidden text-slate-500 dark:text-slate-400">
+                        
+                    </p>
+                </li>
+
+              
+                <li class="flex flex-col items-center  w-100 px-2 py-6 bg-white border border-solid shadow-xl sm:w-5/6 border-slate-900 dark:border-gray-100 dark:bg-black rounded-3xl">
+                    <img src="build/img/IMG_search.png" alt="Infinity" srcset="" class="w-100 mb-6">
+                    <h3 class="text-2xl text-center text-slate-900 dark:text-white sm:text-sm">
+                        Search Files
+                    </h3>
+                    <p class="hidden mt-2 text-3xl text-center sm:block text-slate-500 dark:text-slate-400">
+                        
+                    </p>
+                    <p class="mt-2 text-2xl text-center sm:hidden text-slate-500 dark:text-slate-400">
+                     
+                    </p>
+                </li>
+                
+            </ul>
+        </section>
+
+        <hr class="w-1/2 mx-auto bg-black dark:bg-white">
+
+        <section id="testimonials" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+
+            <h2 class="mb-12 text-4xl font-bold text-center sm:text-5xl text-slate-900 dark:text-white sm:text-sm">
+                Video
+                
+                
+            </h2> 
+
+  
+
+            <figure class="my-12 justify-center items-center text-center">
+                <!-- <blockquote class="relative py-12 pr-8 bg-teal-900 dark:bg-black pl-14 rounded-3xl">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 
+                    before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl
+                     after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Acme has always been for me. Their explorer rockect arrived in a wooden crate as expected.
+                        life-long customer! A++ shopping experience.
+                    </p>
+                    
+                   
+                  
+                </blockquote> -->
+                <div class=" flex flex-auto items-center justify-center ">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/vf9jJSz6M-I"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                         class="w-2/3 ">
+                      </iframe>
+                </div>
+                
+                <!-- <video width="320" height="240" autoplay>
+                    <source  src="build/video/PdfMakerVideo.mp4" type="video/mp4">
+                  
+                    
+                  </video> -->
+                <!-- <figcaption class="mt-2 text-xl italic text-right sm:text-2xl text-slat-500 dark:text-slate-400">
+                    &#8212;Whele E. Coyote, Genius 
+                </figcaption> -->
+            </figure>
+            <!--
+            <figure class="my-12">
+                <blockquote class="relative py-12 pr-8 bg-teal-900 dark:bg-black pl-14 rounded-3xl">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 
+                    before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl
+                     after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                     The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive Space Modulator on several
+                     occassions. <span class="italic">This makes me very, very angry!</span> Nevertheless, K-9
+                     and I have awarded Acme the
+                     Martian contract for space exploration rockets based on Acme's quality and sturdy designs.
+                    </p>
+                </blockquote>
+                
+                    <figcaption class="mt-2 text-xl italic text-right sm:text-2xl text-slat-500 dark:text-slate-400">
+                        &#8212;Marvin The Martian &amp; K-9 
+                    </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="relative py-12 pr-8 bg-teal-900 dark:bg-black pl-14 rounded-3xl">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 
+                    before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl
+                     after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                     I knew I not only wanted &#8212; <span class="italic">
+                        I needed</span> &#8212; </q> 
+                       
+                      
+                         <video src="https://youtu.be/HspAfsXuHHk"></video>
+                    </p>
+                </blockquote>
+                <figcaption class="mt-2 text-xl italic text-right sm:text-2xl text-slat-500 dark:text-slate-400">
+                    &#8212;Buzz Lightyear
+                </figcaption>
+                
+            </figure> -->
+        </section>
+        <!-- <hr class="w-1/2 mx-auto bg-black dark:bg-white">
+        <section id="contacts" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
+
+            <h2 class="mb-12 text-4xl font-bold text-center sm:text-5xl text-slate-900 dark:text-white">
+                Contact Us
+            </h2>
+            <form action="" class="flex flex-col gap-4 mx-auto text-2xl mx-w-4xl sm:text-3xl items-left">
+                <label for="subject">Subject</label>
+                <input type="text" name="subjct" id="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
+                class="w-full p-3 text-2xl text-black border border-solid sm:text-3xl rounded-xl border-slate-900 dark:border-noe"  />
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required 
+                class="w-full p-3 text-2xl text-black border border-solid sm:text-3xl rounded-xl border-slate-900 dark:border-noe"></textarea>
+                <button class="w-48 p-3 text-white bg-teal-700 border border-solid hover:bg-teal-400 active:bg-teal-500 rounded-xl border-slate-900 dark:border-none">
+                    Submit
+                </button>           
+             </form>
+             
+        </section> -->
+        
+       
+
+    </main>
+    <footer id="footer" class="text-xl text-red-500 bg-blue-700">
+        <section class="flex flex-col p-4 mx-auto mx-w-4xl sm:flex-row sm:justify-between" id="contact">
+                <address>
+                  
+                    <a href="#"> <i class="fas fa-store"></i> Play Store</a><br>
+                    <span> 
+                        <i class="fas fa-envelope"></i> duranpro7@gmail.com
+                    </span><br>
+                    <a href="https://t.me/c/2262915670/1"> <i class="fab fa-telegram"></i>
+                        Telegram</a><br>
+                    <a href="https://chat.whatsapp.com/GHrVW9C9DPB7JCq2ZYTrCr"> <i class="fab fa-whatsapp"></i>
+                        WhatsApp </a><br>
+                  
+                </address>
+                <nav class="flex-col hidden  gap-2 md:flex" aria-label="footer">
+                    <a href="index.html" class="hover:opacity-90" > Home </a>
+                    <a href="build/privacy_policy.html" class="hover:opacity-90" > Privacy Policy </a>
+                    <a href="#contact" class="hover:opacity-90" > Contact Us </a>
+                </nav>
+                <div class="flex flex-col sm:gap-3 " >
+                    <p class="md:text-right sm:text-left">
+                      <a href="build/apk/PdfMaker.apk" download="PdfMaker">Download PdfMaker</a>
+                    </p>
+                    <p class="md:text-right sm:text-left">
+                        Copyright &copy; <span id="yeat">2024</span>
+                    </p>
+                    <p class="md:text-right sm:text-left">
+                        All Right Reserved
+                    </p>
+                </div>
+
+               
+        </section>
+    </footer>
+</body>
+</html>
